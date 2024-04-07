@@ -11,7 +11,7 @@
 		<li><a href="#"><img src="https://img.shields.io/badge/statut-En%20cours-FFD700.svg" alt="En cours"></a></li>
 		<li><a href="#"><img src="https://img.shields.io/badge/Projet-Site%20Web-FF4500.svg" alt="Site Web"></a></li>
 		<li><a href="#"><img src="https://img.shields.io/badge/Maquette-Papier-d5b59c.svg" alt="Maquette Papier"></a>
-		<li><a href="#"><img src="https://img.shields.io/badge/Sujet-Association%2C%20protection%20des%20humains%20contre%20animaux-219150.svg" alt="Association, protection des humains contre animaux"></a>
+		<li><a href="#"><img src="https://img.shields.io/badge/Sujet-Association%2C%20protection%20des%20humains%20contre%20les%20animaux-219150.svg" alt="Association, protection des humains contre animaux"></a>
 			<ul type="none">
 				<li><a href="#"><img src="https://img.shields.io/badge/ATTENTION-%21%20Parodie%20humoristique.%20Juste%20pour%20rire%20%21-cc1234.svg" alt="! Parodie humoristique. Juste pour rire !"></a></li>
 			</ul>
@@ -29,58 +29,71 @@
 		<a href="https://www.svgrepo.com/"><img src="https://img.shields.io/badge/SVGrepo-6B9BD2.svg" alt="SVGrepo"></a>
 		<a href="https://app.haikei.app/"><img src="https://img.shields.io/badge/Haikei.app-6147C6.svg" alt="Haikei.app"></a>
 		<a href="https://patorjk.com/software/taag/"><img src="https://img.shields.io/badge/TXT%3EASCII-262B38.svg" alt="TXT>ASCII"></a></li>
-		<li><a href="#"><img src="https://img.shields.io/badge/Readme-Non%20complet-ED3278.svg" alt="Non complet"></a></li>
+		<li><a href="#"><img src="https://img.shields.io/badge/Readme-Non%20complet-ED3278.svg" alt="Inachevé"></a></li>
 	</ul>
 </details>
 
-## 🗒️ Description du Projet
+<h2>🗒️ Description du Projet</h2>
+<blockquote>
+	<b>Date limite de remise : [Date à compléter]</b>
+</blockquote>
 
-> **Date limite de remise : [Date à compléter]**
-
-Ce projet individuel de site web doit être réalisé dans le cadre du cours de Développement Web et soumis avant la date limite spécifiée via la plateforme de l'école. Veuillez noter que ce projet ne sera pas mis en ligne par l'école.
-
-
-## 1. 💡 Sujet du Site
-
-Chaque élève doit choisir un sujet qui l'intéresse et qu'il pourra illustrer et commenter avec aisance. 
-Il doit également identifier le contenu du site, y compris le nombre de pages, leur contenu, la navigation, la répartition des différentes sections, etc.
+<p>Ce projet individuel de site web doit être réalisé dans le cadre du cours de Développement Web et soumis avant la date limite spécifiée via la plateforme de l'école. 
+<br>Veuillez noter que ce projet ne sera pas mis en ligne par l'école.</p>
 
 
-## 2. ✏️ Maquette
+<h2>1. 💡 Sujet du Site</h2>
 
-Chaque élève doit réaliser une maquette sur papier du site, décrivant l'agencement des différentes sections, leurs positions et dimensions approximatives. 
-Il doit également représenter une version pour smartphone(320px) afin d'illustrer l'adaptabilité du site sur des écrans plus petits.
-Les élèves doivent identifier les éléments communs à toutes les pages ainsi que ceux qui varieront d'une page à l'autre.
-
-
-## 3. ☠️ Obligations
+<p>Chaque élève doit choisir un sujet qui l'intéresse et qu'il pourra illustrer et commenter avec aisance. 
+<br>Il doit également identifier le contenu du site, y compris le nombre de pages, leur contenu, la navigation, la répartition des différentes sections, etc</p>
 
 
-"Les élèves doivent respecter les consignes suivantes afin d'éviter une cote de 0/20 pour le projet :
+<h2>2. ✏️ Maquette</h2>
 
-1. **Poids** : Le site ne doit pas dépasser les 5 Mo (poids du dossier compressé en .rar ou en .zip). Il incombe à chaque élève de vérifier le poids de chaque fichier et d'optimiser les plus lourds.
-2. **Langages** : Le site doit être codé uniquement en HTML5 et en CSS. Les autres langages sont proscrits.
-3. **Outils** : Le site doit être codé avec un éditeur de texte tel que Notepad++, le bloc-notes, Smultron, Sublime Text, etc. Les éditeurs wysiwyg comme DreamWeaver, les CMS et les générateurs de code sont proscrits.
-4. **Travail personnel** : Il est interdit d’utiliser des templates téléchargés sur le Web. Dans le cadre de ce projet fictif restant dans un contexte scolaire, les élèves peuvent copier des parties de texte ou utiliser des images trouvées sur le Web. Ceci concerne uniquement les contenus, pas le code.
-5. **Orthographe** : Le site ne doit pas contenir un nombre excessif de fautes d’orthographe. Les élèves doivent relire scrupuleusement leurs textes et, si nécessaire, utiliser un correcteur orthographique.
-6. **Page « Informations »** : Les élèves doivent inclure une page comportant leur nom, leur adresse e-mail et une image de leurs maquettes papier.
-7. **Respect des délais** : Le projet doit être remis dans les temps, via Moodle et sous forme d'un dossier compressé .rar ou .zip (les autres formats ne sont pas acceptés)."
+<p>Chaque élève doit réaliser une maquette sur papier du site, décrivant l'agencement des différentes sections, leurs positions et dimensions approximatives. 
+<br>Il doit également représenter une version pour smartphone(320px) afin d'illustrer l'adaptabilité du site sur des écrans plus petits.
+<br>Les élèves doivent identifier les éléments communs à toutes les pages ainsi que ceux qui varieront d'une page à l'autre</p>
 
+
+<h2>3. ☠️ Obligations</h2>
+
+
+<h4>Les élèves doivent respecter les consignes suivantes afin d'éviter une cote de 0/20 pour le projet :</h4>
+<ol>
+	<li><b>Poids</b> : Le site ne doit pas dépasser les 5 Mo (poids du dossier compressé en .rar ou en .zip). 
+	Il incombe à chaque élève de vérifier le poids de chaque fichier et d'optimiser les plus lourds.</li>
+	<li><b>Langages</b> : Le site doit être codé uniquement en HTML5 et en CSS. Les autres langages sont proscrits.</li>
+	<li><b>Outils</b> : Le site doit être codé avec un éditeur de texte tel que Notepad++, le bloc-notes, Smultron, Sublime Text, etc. Les éditeurs wysiwyg comme DreamWeaver, les CMS et les générateurs de code sont proscrits.</li>
+	<li><b>Travail personnel</b> : Il est interdit d’utiliser des templates téléchargés sur le Web. Dans le cadre de ce projet fictif restant dans un contexte scolaire, les élèves peuvent copier des parties de texte ou utiliser des images trouvées sur le Web. Ceci concerne uniquement les contenus, pas le code.</li>
+	<li><b>Orthographe</b> : Le site ne doit pas contenir un nombre excessif de fautes d’orthographe. Les élèves doivent relire scrupuleusement leurs textes et, si nécessaire, utiliser un correcteur orthographique.</li>
+	<li><b>Page « Informations »</b> : Les élèves doivent inclure une page comportant leur nom, leur adresse e-mail et une image de leurs maquettes papier.</li>
+	<li><b>Respect des délais</b> : Le projet doit être remis dans les temps, via Moodle et sous forme d'un dossier compressé .rar ou .zip (les autres formats ne sont pas acceptés).</li>
+</ol>
 
 ## 4. 🤔 Critères d'Évaluation
 
-Le projet de chaque élève sera évalué selon les critères suivants :
-- Structure des fichiers
-- Ergonomie et Design
-- Compatibilité avec les navigateurs
-- Qualité du code HTML et CSS
-- Référencement
-- Accessibilité
-- Réactivité du site sur différentes résolutions d'écran
+<h4>Le projet de chaque élève sera évalué selon les critères suivants :</h4>
+<ul>
+	<li>Structure des fichiers</li>
+	<li>Ergonomie et Design</li>
+	<li>Compatibilité avec les navigateurs</li>
+	<li>Qualité du code HTML et CSS</li>
+	<li>Référencement</li>
+	<li>Accessibilité</li>
+	<li>Réactivité du site sur différentes résolutions d'écran</li>
+</ul>
+<code>Chaque élève doit veiller à respecter ces critères pour obtenir une évaluation satisfaisante.</code>
 
-Chaque élève doit veiller à respecter ces critères pour obtenir une évaluation satisfaisante.
+<hr>
 
----
-<footer align="center">
-	<p>© 2024 [Votre Nom]. Tous droits réservés.</p>
-</footer>
+<div align="center">
+	<a href="https://corentinl5.github.io/WebSite-project-DevWEB-HEHB1Q2/SiteWeb-L.Corentin-240314/">
+		<img src="https://img.shields.io/website?url=https%3A%2F%2Fcorentinl5.github.io%2FWebSite-project-DevWEB-HEHB1Q2%2FSiteWeb-L.Corentin-240314%2F&up_message=ACTIF&down_message=INACTIF&style=for-the-badge" alt="Badge du Site web de Corentin">
+	</a>
+	<br>
+	<a href="https://validator.w3.org">
+		<img src="https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Fcorentinl5.github.io%2FWebSite-project-DevWEB-HEHB1Q2%2FSiteWeb-L.Corentin-240314%2F&style=for-the-badge" alt="Badge Validator W3C">
+	</a>
+	<hr>
+	<i>2024 <a href="https://github.com/CorentinL5">CorentinL5</a>, <a href="LICENSE">MIT License</a>.</i>
+</div>
