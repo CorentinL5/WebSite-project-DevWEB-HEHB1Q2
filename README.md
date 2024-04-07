@@ -32,8 +32,7 @@
 		<li><a href="#"><img src="https://img.shields.io/badge/Readme-Non%20complet-ED3278.svg" alt="Non complet"></a></li>
 	</ul>
 </details>
-<a href="https://corentinl5.github.io/RedWaved-WebSite">
-	<img src="https://img.shields.io/website?url=https%3A%2F%2Fcorentinl5.github.io%2FRedWaved-WebSite%2F&style=for-the-badge" alt="Repo Website"></a>
+
 ## 🗒️ Description du Projet
 
 > **Date limite de remise : [Date à compléter]**
@@ -82,5 +81,6 @@ Le projet de chaque élève sera évalué selon les critères suivants :
 Chaque élève doit veiller à respecter ces critères pour obtenir une évaluation satisfaisante.
 
 ---
----
-© 2024 [Votre Nom]. Tous droits réservés.
+<footer align="center">
+	<p>© 2024 [Votre Nom]. Tous droits réservés.</p>
+</footer>
