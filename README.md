@@ -4,12 +4,12 @@
 	<summary><a href="#"><img src="https://img.shields.io/badge/Explorez%20ce%20projet-FFD952.svg"></a></summary>
 	<ul type="none">
 		<li><a href="https://www.heh.be"><img src="https://img.shields.io/badge/École-HEH-2373B6.svg" alt="Haute école en Hainaut"></a></li>
-		<li><a href="#"><img src="https://img.shields.io/badge/Département-Sciences%20et%20Technologies-C62E2B.svg" alt="Sciences et Technologies"></a></li>
-		<li><a href="#"><img src="https://img.shields.io/badge/Cours-Dev%20Web-08A12C.svg" alt="Développement Web"></a></li>
-		<li><a href="#"><img src="https://img.shields.io/badge/Année%20académique-2023%202024-00BFFF.svg" alt="2023-2024"></a></li>
-		<li><a href="#"><img src="https://img.shields.io/badge/Étudiant-Corentin%20LALLEMENT-E3735E.svg" alt="Corentin LALLEMENT"></a></li>
+		<li><a href="https://www.heh.be/departement-des-sciences-et-technologies"><img src="https://img.shields.io/badge/Département-Sciences%20et%20Technologies-C62E2B.svg" alt="Sciences et Technologies"></a></li>
+		<li><a href="https://www.w3schools.com/whatis/"><img src="https://img.shields.io/badge/Cours-Dev%20Web-08A12C.svg" alt="Développement Web"></a></li>
+		<li><a href="https://pbs.twimg.com/media/GC7MiEIWoAAiJPV?format=jpg&name=medium"><img src="https://img.shields.io/badge/Année%20académique-2023%202024-00BFFF.svg" alt="2023-2024"></a></li>
+		<li><a href="https://github.com/CorentinL5"><img src="https://img.shields.io/badge/Étudiant-Corentin%20LALLEMENT-E3735E.svg" alt="Corentin LALLEMENT"></a></li>
 		<li><a href="#"><img src="https://img.shields.io/badge/statut-En%20cours-FFD700.svg" alt="En cours"></a></li>
-		<li><a href="#"><img src="https://img.shields.io/badge/Projet-Site%20Web-FF4500.svg" alt="Site Web"></a></li>
+		<li><a href="https://corentinl5.github.io/WebSite-project-DevWEB-HEHB1Q2/SiteWeb-L.Corentin-240314/"><img src="https://img.shields.io/badge/Projet-Site%20Web-FF4500.svg" alt="Site Web"></a></li>
 		<li><a href="#"><img src="https://img.shields.io/badge/Maquette-Papier-d5b59c.svg" alt="Maquette Papier"></a>
 		<li><a href="#"><img src="https://img.shields.io/badge/Sujet-Association%2C%20protection%20des%20humains%20contre%20les%20animaux-219150.svg" alt="Association, protection des humains contre animaux"></a>
 			<ul type="none">
@@ -29,7 +29,7 @@
 		<a href="https://www.svgrepo.com/"><img src="https://img.shields.io/badge/SVGrepo-6B9BD2.svg" alt="SVGrepo"></a>
 		<a href="https://app.haikei.app/"><img src="https://img.shields.io/badge/Haikei.app-6147C6.svg" alt="Haikei.app"></a>
 		<a href="https://patorjk.com/software/taag/"><img src="https://img.shields.io/badge/TXT%3EASCII-262B38.svg" alt="TXT>ASCII"></a></li>
-		<li><a href="#"><img src="https://img.shields.io/badge/Readme-Non%20complet-ED3278.svg" alt="Inachevé"></a></li>
+		<li><a href="README.md"><img src="https://img.shields.io/badge/Readme-Non%20complet-ED3278.svg" alt="Inachevé"></a></li>
 	</ul>
 </details>
 
