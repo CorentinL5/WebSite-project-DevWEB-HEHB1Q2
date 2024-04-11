@@ -1,3 +1,5 @@
+<a href="#"><img align="right" src="https://wakatime.com/badge/user/579bed4b-39bc-4178-85cd-cca984453d63/project/018e846f-ba29-48d3-975b-bba4f39ad6f0.svg" alt="wakatime"></a>
+
 <h1 align="center">Projet de Site Web</h1>
 
 <details>

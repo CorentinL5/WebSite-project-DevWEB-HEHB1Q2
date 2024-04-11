@@ -79,24 +79,11 @@
 |___/<___|/__/\___./__/
 */
 
-
-*{
-    font-family: Bahnschrift, Arial, sans-serif;
-}
-
 html {
     background-color: var(--background-color);
     font-family: Bahnschrift, Arial, sans-serif;
 }
 
-h1, h1 *,
-h2, h2 *,
-h3, h3 *,
-h4, h4 *,
-h5, h5 *,
-h6, h6 * {
-    font-family: Tahoma, Bahnschrift, Arial, sans-serif;
-}
 
 li {
     list-style: none;
@@ -151,8 +138,8 @@ header nav {
                 left 0.25s ease-in-out;
 }
 
-header nav h2 {
-    font-size: 2.5em;
+header nav h2 a {
+    font-size: 1.75em;
     color: var(--main-d1-color);
     text-shadow: 5px 0 5px var(--main-l1-color);
     margin: 0 0.375em;
@@ -203,7 +190,7 @@ header #title-div h1 {
 header {
     width: 100%;
     height: 30em;
-    background:url('assets/decoration/header-bg.webp') no-repeat center center;
+    background: url('assets/decoration/header-bg.webp') no-repeat center center;
     background-size: cover;
 }
 
@@ -225,7 +212,7 @@ main {
 
 main #action-fields h2 {
     text-align: center;
-    padding: 2em;
+    padding: 2em 0;
     font-size: 1.75em;
 }
 
@@ -292,7 +279,6 @@ footer {
     margin-top: -20em;
     width: 100%;
     height: auto;
-    z-index: 100;
     object-fit: cover;
 }
 
@@ -361,7 +347,7 @@ footer fieldset legend {
 }
 
 #footer-nav nav ul li a:hover {
-    background-color: rgba(0, 0, 0, 0.1); /* Couleur de fond légère au survol */
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 footer .grid{
@@ -390,8 +376,8 @@ footer .grid{
 @media screen and (max-width: 500px)
 {
     header {
-        /* height: 35em; */
-        background:url('assets/decoration/header-bg-phone.webp') no-repeat center center;
+        background: url('assets/decoration/header-bg-phone.webp') no-repeat center center;
+        background-size: cover;
     }
 
     header nav {
@@ -409,7 +395,6 @@ footer .grid{
         width: 80%;
         top: 16.5em;
     }
-
 
     main {
         margin-top: -5em;
@@ -435,6 +420,10 @@ footer .grid{
 
     footer .grid {
         grid-template-columns: 1fr;
+    }
+
+    #footer-donation button {
+        filter: blur(0px);
     }
 
 }
