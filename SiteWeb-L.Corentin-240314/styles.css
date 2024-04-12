@@ -49,6 +49,7 @@
     --main-d2-color : #1a7440;
     --contrast-color: #f1c40f;
     --background-color:#eafaf1;
+    --background-d1-color:#c3f1d7;
     --dark-color: #05150B;
     --glaucous-color: #6082B6;
     --silver-color : #C0C0C0;
@@ -205,7 +206,8 @@ header {
 |_|_|_|<___||_||_|_|
 */
 main {
-    z-index: 3;
+    display: relative;
+    z-index: 4;
     margin-top: -4.5em;
     padding: 0 15%;
 }
@@ -261,6 +263,29 @@ main #action-fields .card .text h3 {
     margin-bottom: 1.5em;
 }
 
+main #animals {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+    margin-top: 3em;
+}
+
+main details.animal {
+    background-color: var(--main-l1-color);
+    border-radius: var(--main-radius);
+    padding: 0.5em;
+    box-shadow: 0 0 15px 0 var(--main-color);
+}
+
+main details.animal summary {
+    font-size: 1.25em;
+    color: var(--dark-color);
+    text-align: center;
+    padding: 0.5em;
+    cursor: pointer;
+    list-style: none;
+}
+
 
 /*
  ___            _            
@@ -273,6 +298,7 @@ footer {
     height: auto;
     margin-top: 200px;
     color: var(--dark-color);
+    position: relative;
 }
 
 #before-footer{
@@ -309,7 +335,7 @@ footer fieldset legend {
     height: auto;
 }
 
-#footer-donation button {
+footer #footer-donation button {
     background-color: var(--contrast-color);
     border: none;
     padding: 8px 16px;
@@ -322,12 +348,12 @@ footer fieldset legend {
     filter: blur(5px);
 }
 
-#footer-donation button:hover,
-#footer-donation button:focus {
+footer #footer-donation button:hover,
+footer #footer-donation button:focus {
     filter: blur(0px);
 }
 
-#footer-donation button:active {
+footer #footer-donation button:active {
     box-shadow: 0 0 5px 0 var(--silver-color);
 }
 
@@ -350,7 +376,7 @@ footer fieldset legend {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-footer .grid{
+footer #action-fields .grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
     text-align: center;
@@ -363,6 +389,15 @@ footer .grid{
     text-align: center;
     padding: 10px;
     margin: 10px;
+}
+
+#back-to-top {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 0.625em 1.25em;
+    cursor: pointer;
+    border-radius: var(--main-radius);
 }
 
 
@@ -418,11 +453,12 @@ footer .grid{
         margin-top: 1.25em;
     }
 
+    footer
     footer .grid {
         grid-template-columns: 1fr;
     }
 
-    #footer-donation button {
+    footer #footer-donation button {
         filter: blur(0px);
     }
 
@@ -449,5 +485,4 @@ footer .grid{
     main #action-fields .left img {
         left: -1.25em;
     }
-
 }
