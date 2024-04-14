@@ -17,14 +17,19 @@
 
 		<link rel="preload" fetchpriority="high" as="image" href="assets/logo.webp" type="image/webp">
 		<link rel="preload" fetchpriority="high" as="image" href="assets/decoration/header-bg.webp" type="image/webp">
-		<link rel="preload" fetchpriority="high" as="image" href="assets/decoration/header-bg-phone.webp" type="image/webp" media="(max-width: 500px)">
+		<link rel="preload" fetchpriority="high" as="image" href="assets/decoration/header-bg-phone.webp" type="image/webp" media="max-width: 500px">
 
-		<title>WildReaction | Home</title>
+		<link rel="preload" as="font" href="assets/fonts/Bahnschrift.ttf" type="font/ttf" crossorigin="anonymous">
+		<link rel="preload" as="font" href="assets/fonts/Shojumaru.ttf" type="font/ttf" crossorigin="anonymous">
+
+		<title>WildReact | Home</title>
 	<body>
 		<header>
 			<nav>
-				<a href="."><img class="logo" src="assets/logo.webp" alt="logo WildReaction" width="60" height="60" ></a>
-				<h2><a href=".">WildReaction</a></h2>
+				<a href="."><img class="logo" src="assets/logo.webp" alt="logo WildReact" width="60" height="60" ></a>
+				<h2>
+					<a href=".">WildReact</a>
+				</h2>
 				
 				<ul id="nav-menu">
 					<li><a class="active" href=".">Accueil</a></li>
@@ -34,20 +39,30 @@
 			</nav>
 			<div id="title-div">
 				<h1>Accueil</h1>
-				<p>Bienvenue sur le site de la première association qui protège les humains des animaux</p>
+				<p>Unis pour la sécurité humaine.</p>
 
 			</div>
 		</header>
 
 		<main>
+			<section id="site-presentation">
+				<h2>Bienvenue chez WildReact</h2>
+				<div>
+					<p><strong>Grâce à nos efforts de sensibilisation, de conservation et de gestion responsable des habitats</strong>, nous créons des environnements où les humains peuvent vivre en harmonie avec la nature.</p>
+					<p><strong>Bienvenue sur le site de WildReact</strong>, la première association qui protège les humains des animaux. Notre mission est de garantir la sécurité des individus tout en préservant la beauté et l'équilibre de la faune sauvage.</p>
+					<p><strong>Nous comptons sur votre soutien</strong> pour continuer à protéger les humains des animaux et à préserver notre monde naturel. Faites un don dès maintenant et rejoignez notre cause.</p>
+					<p><strong>Explorez nos différentes sections</strong> pour en apprendre davantage sur nos actions dans les secteurs urbains, les déserts, les prairies verdoyantes, les pics alpins, les montagnes majestueuses et les paradis marins.</p>
+				</div>
+			</section>
+
 			<section id="action-fields">
-				<h2>Action Fields</h2>
-				<div class="cards">
-					<div class="card left">
+				<h2>Lieux d'Action</h2>
+				<div class="content">
+					<div class="card right">
 						<img src="assets/action-fields/building.webp" alt="webp des immeubles dans une ville">
 						<div class="text">
 							<h3>Secteur Urbain</h3>
-							<p> Cherchez refuge au milieu des immeubles, à l'abri de la faune sauvage.
+							<p>Cherchez refuge au milieu des immeubles, à l'abri de la faune sauvage.
 								<br>
 								<br>Notre association travaille sans relâche pour garantir que les zones urbaines restent des havres de paix pour les humains, malgré l'urbanisation croissante et les risques potentiels posés par la faune sauvage.
 								<br>
@@ -56,7 +71,7 @@
 						</div>
 					</div>
 
-					<div class="card right">
+					<div class="card left">
 						<img src="assets/action-fields/desert.webp" alt="webp d'un désert de sable">
 						<div class="text">
 							<h3>Havre du Désert</h3>
@@ -69,11 +84,11 @@
 						</div>
 					</div>
 
-					<div class="card left">
+					<div class="card right">
 						<img src="assets/action-fields/grass.webp" alt="webp de l'herbe">
 						<div class="text">
-							<h3> Prairie Verdoyante</h3>
-							<p> Découvrez la sérénité de Lush Meadows, où les prairies verdoyantes s'étendent à perte de vue
+							<h3>Prairie Verdoyante</h3>
+							<p>Découvrez la sérénité des zones vertes, où les prairies verdoyantes s'étendent à perte de vue
 								<br>
 								<br>Notre association travaille avec diligence pour maintenir l'équilibre délicat de cet écosystème vibrant, veillant à ce qu'il prospère pour les générations à venir
 								<br>
@@ -84,7 +99,7 @@
 						</div>
 					</div>
 
-					<div class="card right">
+					<div class="card left">
 						<img src="assets/action-fields/mountain-snow.webp" alt="webp d'une montagne enneigée">
 						<div class="text">
 							<h3>Pics Alpins</h3>
@@ -99,7 +114,7 @@
 						</div>
 					</div>
 
-					<div class="card left">
+					<div class="card right">
 						<img src="assets/action-fields/mountain.webp" alt="webp d'une montagne">
 						<div class="text">
 							<h3>Montagnes Majestueuses</h3>
@@ -114,7 +129,7 @@
 						</div>
 					</div>
 
-					<div class="card right">
+					<div class="card left">
 						<img src="assets/action-fields/water.webp" alt="webp de vagues">
 						<div class="text">
 							<h3>Paradis Marin</h3>
@@ -138,7 +153,7 @@
 			
 			<div id="footer-content">
 				<div id="footer-start">
-					<img class="logo" src="assets/logo.webp" alt="logo WildReaction" width="100" height="100">
+					<a href="."><img class="logo" src="assets/logo.webp" alt="logo WildReact" width="100" height="100" ></a>
 				</div>
 				<div class="grid">
 					<fieldset id="footer-donation">
@@ -159,17 +174,15 @@
 				</div>
 				<div id="footer-end">
 					<sub>
-						<i>2024 WildREaction.
+						<i>2024 WildReact.
 							<br>Tous droits réservés.
 						</i>
 					</sub>
 				</div>
 			</div>
-			<a id="back-to-top" href="#title-div">
+			<a id="back-to-top" href="#">
 				<img src="assets/decoration/back-to-top.svg" alt="back to top" width="40" height="40">
-
 			</a>
-
 		</footer>
 	</body>
 </html>

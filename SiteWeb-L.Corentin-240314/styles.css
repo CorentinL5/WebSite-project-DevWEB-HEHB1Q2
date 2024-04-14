@@ -28,9 +28,37 @@
 > https://www.svgrepo.com/collection/animal-outlined-sepia-icons/
 > https://www.svgrepo.com/collection/credit-card-payment-flat-icons/
 > https://www.svgrepo.com/collection/nature-circle-vectors/
+> https://www.svgrepo.com/svg/72911/canine-pawprint
 > https://app.haikei.app/
+
+> https://font.download/font/bahnschrift
+> https://font.download/font/shojumaru
+
 > https://patorjk.com/software/taag
+
+> https://www.svgviewer.dev/
+> https://pixelied.com/convert
+> https://pixelied.com/features/combine-svg
+> https://convertio.co/fr/svg-ico/
 */
+
+
+
+/*
+  ___        _      
+ | __|__ _ _| |_ ___
+ | _/ _ \ ' \  _(_-<
+ |_|\___/_||_\__/__/
+*/
+@font-face {
+    font-family: 'Bahnschrift';
+    src: url('assets/fonts/Bahnschrift.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Shojumaru';
+    src: url('assets/fonts/Shojumaru.ttf') format('truetype');   
+}
 
 
 
@@ -39,7 +67,6 @@
 | | | ___  _ _ <_> ___ | |_ | | ___  ___
 | ' |<_> || '_>| |<_> || . \| |/ ._><_-<
 |__/ <___||_|  |_|<___||___/|_|\___./__/
-                                        
 */
 :root {
     --main-color : #2AB663;
@@ -51,10 +78,12 @@
     --background-color:#eafaf1;
     --background-d1-color:#c3f1d7;
     --dark-color: #05150B;
+    --medium-color: #595959;
+    --light-color: #f9f9f9;
     --glaucous-color: #6082B6;
     --silver-color : #C0C0C0;
     --nav-radius: 50px;
-    --main-radius: 25px;
+    --main-radius: 12.5px;
 }
 
 
@@ -64,7 +93,6 @@
 | . \ ___  ___ ___ _| |_ 
 |   // ._><_-</ ._> | |  
 |_\_\\___./__/\___. |_|  
-
 */
 * {
     margin: 0;
@@ -79,12 +107,25 @@
 | . \<_> |<_-</ ._><_-<
 |___/<___|/__/\___./__/
 */
-
+* {
+    transition: all .15s ease-in-out, background 0s, font-size 0s;
+}
 html {
     background-color: var(--background-color);
-    font-family: Bahnschrift, Arial, sans-serif;
+    font-family: 'Bahnschrift', 'Calibri', Arial, sans-serif;
+    font-size: 0.9em;
+
+    --scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
+h1, h2 {
+    font-family: 'Shojumaru', 'Bahnschrift', 'Calibri', Arial, sans-serif;
+}
+
+main section:not(:last-child) {
+    margin-bottom: 5em;
+}
 
 li {
     list-style: none;
@@ -106,7 +147,15 @@ img {
     width: 5em;
     height: auto;
 }
-
+.card {
+    position: relative;
+    background-color: var(--main-l1-color);
+    margin-bottom: 3.125em;
+    border-radius: var(--main-radius);
+    height: auto;
+    padding: 0.75em 2.5em;
+    box-shadow: 0 0 5px 0 var(--main-color);
+}
 
 /*
  _ _              _           
@@ -115,35 +164,26 @@ img {
 |_|_|\___.<___|\___|\___.|_|  
 */
 header nav {
-    z-index: 5;
     box-shadow: 0 0 10px 0 var(--dark-color);
-    position: absolute;
-    top: 0;
-    right: 10%;
-    left: 10%;
-    width: 80%;
+    margin: 0 auto;
+    width: 100%;
     background-color: var(--background-color);
-    border-radius: 0 0 var(--nav-radius) var(--nav-radius);
     height: auto;
     min-height: 7em;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: space-around;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: column;
     padding: 1.5em 0;
-    transition: width 0.25s ease-in-out, 
-                border-radius 0.25s ease-in-out, 
-                right 0.25s ease-in-out, 
-                left 0.25s ease-in-out;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 header nav h2 a {
+    display: none;
+    padding: 0 1em;
     font-size: 1.75em;
     color: var(--main-d1-color);
     text-shadow: 5px 0 5px var(--main-l1-color);
-    margin: 0 0.375em;
 }
 
 header nav #nav-menu {
@@ -191,8 +231,7 @@ header #title-div h1 {
 header {
     width: 100%;
     height: 30em;
-    background: url('assets/decoration/header-bg.webp') no-repeat center center;
-    background-size: cover;
+    background: url('assets/decoration/header-bg-phone.webp') no-repeat center center;
 }
 
 
@@ -206,46 +245,52 @@ header {
 |_|_|_|<___||_||_|_|
 */
 main {
-    display: relative;
-    z-index: 4;
-    margin-top: -4.5em;
-    padding: 0 15%;
-}
-
-main #action-fields h2 {
-    text-align: center;
-    padding: 2em 0;
-    font-size: 1.75em;
-}
-
-main #action-fields .cards {
-    display: block;
-}
-
-main #action-fields .card {
     position: relative;
-    background-color: var(--main-l1-color);
+    z-index: 4;
+    margin-top: -3em;
+    padding: 0 10%;
+}
+
+main h2 {
+    font-size: 1.75em;
+    margin-bottom: 0.75em;
+    border-left: 0.2em solid var(--main-color);
+    padding: 0.5em;
+}
+
+main #site-presentation {
+    margin-top: 0.5em;
+}
+
+main #site-presentation div {
     margin-bottom: 3.125em;
-    border-radius: var(--main-radius);
-    height: auto;
-    padding: 0.75em 2.5em;
-    box-shadow: 0 0 15px 0 var(--main-color);
+}
+
+main #site-presentation p {
+    color: var(--dark-color);
+    font-size: 16px;
+    margin-bottom: 0.75em;
+}
+
+
+main #action-fields .content {
+    display: block;
 }
 
 main #action-fields .card img {
     box-shadow: 0 0 5px 0 var(--dark-color);
     border-radius: 100%;
-    height: 6.5em;
+    height: 4em;
     position: absolute;
-    top: -2.5em;
+    top: -1.5em;
 }
 
 main #action-fields .right img {
-    right: -2.5em;
+    right: -1.5em;
 }
 
 main #action-fields .left img {
-    left: -2.5em;
+    left: -1.5em;
 }
 
 main #action-fields .card .text {
@@ -258,33 +303,71 @@ main #action-fields .card .text {
 }
 
 main #action-fields .card .text h3 {
+    text-align: center;
     margin-top: 0.5em;
     font-size: 1.25em;
     margin-bottom: 1.5em;
 }
 
-main #animals {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1em;
-    margin-top: 3em;
+main #animals .content {
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    gap: 2em;
 }
 
 main details.animal {
-    background-color: var(--main-l1-color);
+    /* background-color: var(--main-l1-color); */
     border-radius: var(--main-radius);
     padding: 0.5em;
-    box-shadow: 0 0 15px 0 var(--main-color);
+    margin: 0.5em;
+    /* box-shadow: 0 0 15px 0 var(--main-color); */
 }
 
-main details.animal summary {
-    font-size: 1.25em;
-    color: var(--dark-color);
-    text-align: center;
-    padding: 0.5em;
-    cursor: pointer;
-    list-style: none;
+main #animals .animal {
+    flex: 1 1 15em; /* Ajustez la largeur selon vos besoins */
+    background-color: var(--light-color);
+    /* border-radius: 10px; */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
+main #animals .animal:hover {
+    transform: translateY(-5px);
+}
+
+main #animals .animal img {
+    display: block;
+    margin: 0 auto 1em;
+    padding: 0.5em;
+}
+
+main #animals .animal h3 {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    margin: 0 20% 0.25em 20%;
+}
+
+main #animals .animal p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--medium-color);
+}
+
+main #animals .animal p a {
+    text-decoration: underline;
+    color: var(--dark-color);
+}
+
+main #animals .animal p a:hover {
+    color: var(--contrast-color);
+}
+
+main #animals .animal p:not(:last-child) {
+    margin-bottom: 1em;
+}
+
 
 
 /*
@@ -296,13 +379,13 @@ main details.animal summary {
 footer {
     background-color: var(--main-color);
     height: auto;
-    margin-top: 200px;
+    margin-top: 11.875em;
     color: var(--dark-color);
     position: relative;
 }
 
 #before-footer{
-    margin-top: -20em;
+    margin-top: -18.75em;
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -312,13 +395,19 @@ footer {
     padding: 2rem 2.5rem;
 }
 
+footer .grid {
+    border-bottom: var(--contrast-color) 1.5px solid;
+}
+
 footer fieldset {
+    text-align: center;
     border: none;
     border-top: 2px dotted var(--contrast-color);
     margin: 20px;
 }
 
 footer fieldset legend {
+    font-weight: bold;
     padding: 0 10px;
     font-size: 1.25em;
     text-align: center;
@@ -345,7 +434,7 @@ footer #footer-donation button {
     margin: 4px 2px;
     cursor: pointer;
     box-shadow: 0 0 0 0 transparent;
-    filter: blur(5px);
+    filter: blur(0px);
 }
 
 footer #footer-donation button:hover,
@@ -366,7 +455,7 @@ footer #footer-donation button:active {
 
 #footer-nav nav ul li a {
     display: block;
-    color: #161616; /* Couleur du texte */
+    color: var(--dark-color);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -408,81 +497,60 @@ footer #action-fields .grid{
 |     |/ ._>/ . || |<_> |
 |_|_|_|\___.\___||_|<___|
 */
-@media screen and (max-width: 500px)
+@media (width >= 500px)
 {
+    html {
+        font-size: 1em;
+    }
+
     header {
-        background: url('assets/decoration/header-bg-phone.webp') no-repeat center center;
-        background-size: cover;
+        background: url('assets/decoration/header-bg.webp') no-repeat center center;
     }
 
     header nav {
-        right: 0;
-        left: 0;
-        width: 100%;
-        border-radius: 0;
-    }
-
-    header nav #nav-menu li {
-        padding: 0.5em;
-    }
-
-    header #title-div {
         width: 80%;
-        top: 16.5em;
+        border-radius: 0 0 var(--nav-radius) var(--nav-radius);
     }
 
-    main {
-        margin-top: -5em;
-        padding: 0 10%;
+    main #site-presentation div {
+        column-count: 2;
     }
 
-    main #action-fields .card img {
-        height: 5em;
-        top: -1.75em;
-    }
-
-    main #action-fields .right img {
-        right: -1.75em;
-    }
-
-    main #action-fields .left img {
-        left: -1.75em;
-    }
-
-    main #action-fields .card .text h4 {
-        margin-top: 1.25em;
-    }
-
-    footer
     footer .grid {
-        grid-template-columns: 1fr;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        grid-column-gap: 1em;
     }
 
     footer #footer-donation button {
-        filter: blur(0px);
+        filter: blur(5px);
     }
-
 }
 
-@media screen and (max-width: 420px) {
+
+@media (width >= 720px)
+{
     header nav {
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    header nav h2 a {
+        display: block;
     }
     
-    header nav h2 {
-        display: none;
+    main #action-fields .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0 4em;
     }
+}
 
-    main #action-fields .card img {
-        height: 3.75em;
-        top: -1.25em;
-    }
 
-    main #action-fields .right img {
-        right: -1.25em;
-    }
-
-    main #action-fields .left img {
-        left: -1.25em;
+@media (width >= 1024px)
+{
+    main {
+        padding: 0 7.5%;
     }
 }
