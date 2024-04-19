@@ -202,6 +202,7 @@ header nav #nav-menu li {
 header nav #nav-menu li a {
     color: var(--dark-color);
     font-size: 1.25em;
+    padding: .375em
 }
 
 header nav #nav-menu li a.active{
@@ -417,7 +418,45 @@ main #FAQ details[open] summary {
     border-bottom: none;
 }
 
+main #Ressources {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    gap: 1em;
+}
 
+main #Ressources h2 {
+    border: none;
+    border-bottom:0.2em solid var(--main-color);
+}
+
+main #Ressources div {
+    text-align: center;
+}
+
+main #Ressources div ul:not(:last-child) {
+    margin-bottom: 3.75em;
+}
+
+main #Ressources li {
+    margin: 1.5em;
+}
+
+main #Ressources a {
+    color: var(--dark-color);
+    font-size: 1.25em;
+    padding: 0.5em;
+    border: 1px solid var(--dark-color);
+    border-radius: var(--main-radius);
+    background-color: var(--background-d1-color);
+    box-shadow: 0 0 5px 0 var(--main-color);
+}
+main #Ressources a:hover {
+    background-color: var(--contrast-color);
+    color: var(--background-color);
+}
 
 /*
  ___            _            
