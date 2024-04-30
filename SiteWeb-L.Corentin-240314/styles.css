@@ -83,7 +83,7 @@
     --glaucous-color: #6082B6;
     --silver-color : #C0C0C0;
     --nav-radius: 50px;
-    --main-radius: 12.5px;
+    --main-radius: 13px;
 }
 
 
@@ -347,7 +347,6 @@ main #animals .animal img {
 main #animals .animal h3 {
     text-align: center;
     font-size: 1.2rem;
-    margin-bottom: 10px;
     margin: 0 20% 0.25em 20%;
 }
 
@@ -488,7 +487,7 @@ footer {
 }
 
 footer .grid {
-    border-bottom: var(--contrast-color) 1.5px solid;
+    border-bottom: var(--contrast-color) 2px solid;
 }
 
 footer fieldset {
@@ -503,6 +502,14 @@ footer fieldset legend {
     padding: 0 10px;
     font-size: 1.25em;
     text-align: center;
+}
+
+main #Maquettes img {
+    height: auto;
+    width: 80%;
+    box-shadow: 0 0 5px 0 var(--main-color);
+    margin: 1em;
+    padding: 1em;
 }
 
 #footer-start {
@@ -637,6 +644,10 @@ footer #action-fields .grid{
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 0 4em;
+    }
+
+    main #Maquettes img {
+        width: 35%;
     }
 }
 
