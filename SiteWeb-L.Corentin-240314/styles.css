@@ -471,6 +471,39 @@ main #Ressources li:hover {
     background-color: var(--contrast-color);
 }
 
+main #Donation div {
+    margin-bottom: 1.25em;
+}
+
+main #Donation a.donner {
+    text-align: center;
+    margin: 1em;
+    padding: 1em;
+    border-radius: var(--main-radius);
+    background-color: var(--background-d1-color);
+    color: var(--dark-color);
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    filter: blur(0.35px);
+    transition: all 0.375s ease-in-out;
+}
+
+main #Donation a.donner:hover {
+    filter: blur(0px);
+    background-color: var(--contrast-color);
+}
+
+main #Payment div img {
+    margin: 0 1em;
+    height: 10em;
+    width: auto;
+}
+main #Payment div img:hover {
+    transform: scale(1.1);
+}
+
+
 /*
  ___            _            
 | __>___  ___ _| |_ ___  _ _ 
@@ -533,7 +566,8 @@ main #Maquettes img {
     height: auto;
 }
 
-footer #footer-donation button {
+footer #footer-donation .button {
+    color: var(--dark-color);
     background-color: var(--contrast-color);
     border: none;
     padding: 8px 16px;
@@ -546,12 +580,12 @@ footer #footer-donation button {
     filter: blur(0px);
 }
 
-footer #footer-donation button:hover,
-footer #footer-donation button:focus {
+footer #footer-donation .button:hover,
+footer #footer-donation .button:focus {
     filter: blur(0px);
 }
 
-footer #footer-donation button:active {
+footer #footer-donation .button:active {
     box-shadow: 0 0 5px 0 var(--silver-color);
 }
 
