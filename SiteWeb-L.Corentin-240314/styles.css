@@ -146,6 +146,7 @@ img {
 .logo {
     width: 5em;
     height: auto;
+    padding: 0.5em;
 }
 .card {
     position: relative;
@@ -202,7 +203,7 @@ header nav #nav-menu li {
 header nav #nav-menu li a {
     color: var(--dark-color);
     font-size: 1.25em;
-    padding: .375em
+    padding: 1em 0.625em;
 }
 
 header nav #nav-menu li a.active{
@@ -449,18 +450,25 @@ main #Ressources li {
     margin: 1.5em;
 }
 
-main #Ressources a {
-    color: var(--dark-color);
-    font-size: 1.25em;
-    padding: 0.5em;
+main #Ressources {
     border: 1px solid var(--dark-color);
     border-radius: var(--main-radius);
     background-color: var(--background-d1-color);
     box-shadow: 0 0 5px 0 var(--main-color);
 }
-main #Ressources a:hover {
+
+main #Ressources a{
+    color: var(--dark-color);
+}
+
+main #Ressources li{
+    font-size: 1.25em;
+    padding: 0.75em;
+    border-radius: var(--main-radius);
+}
+
+main #Ressources li:hover {
     background-color: var(--contrast-color);
-    color: var(--background-color);
 }
 
 /*
@@ -520,7 +528,7 @@ main #Maquettes img {
     margin: 10px;
 }
 
-#footer-start  .logo {
+#footer-start .logo {
     width: 7.5em;
     height: auto;
 }
