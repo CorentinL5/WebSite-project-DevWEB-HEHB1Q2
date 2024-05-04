@@ -292,7 +292,7 @@ main #action-fields .right img {
 }
 
 main #action-fields .left img {
-    right: -1.5em;
+    left: -1.5em;
 }
 
 main #action-fields .card .text {
@@ -342,6 +342,8 @@ main #animals .animal img {
     display: block;
     margin: 0 auto 1em;
     padding: 0.5em;
+    width: 10rem;
+    height: 10rem;
 }
 
 main #animals .animal h3 {
@@ -444,28 +446,19 @@ main #Ressources div ul:not(:last-child) {
 }
 
 main #Ressources li {
-    margin: 1em;
-    padding: 0.5em;
-}
-
-main #Ressources {
-    color: var(--dark-color);
-    /* margin: 0 15%; */
-    border: 1px solid var(--dark-color);
-    border-radius: var(--main-radius);
-    background-color: var(--background-d1-color);
-    box-shadow: 0 0 5px 0 var(--main-color);
+    margin: 1.5em;
 }
 
 main #Ressources a {
     color: var(--dark-color);
     font-size: 1.25em;
     padding: 0.5em;
-    /* border-radius: var(--main-radius); */
-}
-
-main #Ressources li:hover {
+    border: 1px solid var(--dark-color);
     border-radius: var(--main-radius);
+    background-color: var(--background-d1-color);
+    box-shadow: 0 0 5px 0 var(--main-color);
+}
+main #Ressources a:hover {
     background-color: var(--contrast-color);
     color: var(--background-color);
 }
