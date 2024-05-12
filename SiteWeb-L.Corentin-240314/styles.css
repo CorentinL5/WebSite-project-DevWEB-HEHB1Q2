@@ -485,7 +485,7 @@ main #Donation a.donner {
     border: none;
     text-decoration: none;
     cursor: pointer;
-    filter: blur(0.35px);
+    filter: blur(1px);
     transition: all 0.375s ease-in-out;
 }
 
@@ -688,6 +688,11 @@ footer #action-fields .grid{
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 0 4em;
+    }
+
+    main #action-fields .left img {
+        left: auto;
+        right: -1.5em;
     }
 
     main #Maquettes img {
