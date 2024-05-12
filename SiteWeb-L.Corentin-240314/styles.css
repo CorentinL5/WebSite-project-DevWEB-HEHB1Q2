@@ -203,7 +203,7 @@ header nav #nav-menu li {
 header nav #nav-menu li a {
     color: var(--dark-color);
     font-size: 1.25em;
-    padding: 1em 0.625em;
+    padding: 0.625em;
 }
 
 header nav #nav-menu li a.active{
@@ -577,7 +577,7 @@ footer #footer-donation .button {
     margin: 4px 2px;
     cursor: pointer;
     box-shadow: 0 0 0 0 transparent;
-    filter: blur(0px);
+    filter: blur(2px);
 }
 
 footer #footer-donation .button:hover,
@@ -594,6 +594,7 @@ footer #footer-donation .button:active {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    border-radius: var(--main-radius);
 }
 
 #footer-nav nav ul li a {
