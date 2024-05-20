@@ -204,6 +204,7 @@ header nav #nav-menu li a {
     color: var(--dark-color);
     font-size: 1.25em;
     padding: 0.625em;
+    text-shadow: 1px 1px 3px white;
 }
 
 header nav #nav-menu li a.active{
@@ -211,8 +212,10 @@ header nav #nav-menu li a.active{
     font-size: 1.25em;
 }
 
-header nav #nav-menu li a:hover {
+header nav #nav-menu li a:hover,
+header nav #nav-menu li a:focus {
     color: var(--contrast-color);
+    text-shadow: 1px 1px 3px black;
 }
 
 header #title-div {
@@ -489,6 +492,7 @@ main #Donation a.donner {
     transition: all 0.375s ease-in-out;
 }
 
+main #Donation a.donner:focus,
 main #Donation a.donner:hover {
     filter: blur(0px);
     background-color: var(--contrast-color);
@@ -605,6 +609,7 @@ footer #footer-donation .button:active {
     text-decoration: none;
 }
 
+#footer-nav nav ul li a:focus,
 #footer-nav nav ul li a:hover {
     background-color: rgba(0, 0, 0, 0.1);
 }
