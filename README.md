@@ -3,7 +3,8 @@
 <h1 align="center">Projet de Site Web</h1>
 
 <details>
-	<summary><a href="#"><img src="https://img.shields.io/badge/Explorez%20ce%20projet-FFD952.svg"></a></summary>
+	<summary><b>Explorez ce projet</b></summary>
+	<br>
 	<ul type="none">
 		<li><a href="https://www.heh.be"><img src="https://img.shields.io/badge/École-HEH-2373B6.svg" alt="Haute école en Hainaut"></a></li>
 		<li><a href="https://www.heh.be/departement-des-sciences-et-technologies"><img src="https://img.shields.io/badge/Département-Sciences%20et%20Technologies-C62E2B.svg" alt="Sciences et Technologies"></a></li>
